@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NotebookLM - RAG System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>NotebookLM Clone</h1>
+            <p>Upload a document and ask questions about it.</p>
+        </header>
+
+        <section class="upload-section">
+            <div class="upload-card">
+                <h2>1. Upload Document</h2>
+                <form id="uploadForm">
+                    <input type="file" id="fileInput" accept=".pdf, .txt" required>
+                    <button type="submit" id="uploadBtn">Upload to RAG</button>
+                </form>
+                <div id="uploadStatus"></div>
+            </div>
+        </section>
+
+        <section class="chat-section">
+            <div class="chat-card">
+                <h2>2. Ask Questions</h2>
+                <div class="chat-window" id="chatWindow">
+                    <!-- Chat messages will appear here -->
+                </div>
+                <form id="queryForm">
+                    <input type="text" id="queryInput" placeholder="Ask something about the document..." required autocomplete="off">
+                    <button type="submit" id="queryBtn">Ask</button>
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

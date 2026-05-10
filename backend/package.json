@@ -1,0 +1,28 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@langchain/community": "^1.1.28",
+    "@langchain/core": "^1.1.45",
+    "@langchain/google-genai": "^2.1.30",
+    "@langchain/openai": "^1.4.5",
+    "@langchain/textsplitters": "^1.0.1",
+    "@qdrant/js-client-rest": "^1.17.0",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "langchain": "^1.4.0",
+    "multer": "^2.1.1",
+    "pdf-parse": "^2.4.5",
+    "yargs": "^18.0.0"
+  }
+}
